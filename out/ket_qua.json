@@ -1,0 +1,425 @@
+{
+ "n_raw_merged": 21980,
+ "n_complete": 20768,
+ "n_sample": 10000,
+ "class_full": {
+  "Sport": 12802,
+  "Entertainment": 6314,
+  "Lifestyle": 1652
+ },
+ "class_sample": {
+  "Sport": 6164,
+  "Entertainment": 3040,
+  "Lifestyle": 796
+ },
+ "n_train": 8000,
+ "n_test": 2000,
+ "class_train": {
+  "Sport": 4931,
+  "Entertainment": 2432,
+  "Lifestyle": 637
+ },
+ "class_test": {
+  "Sport": 1233,
+  "Entertainment": 608,
+  "Lifestyle": 159
+ },
+ "features": [
+  "account_age_days",
+  "listed_count",
+  "favourites_count",
+  "statuses_count",
+  "friends_count",
+  "followers_count",
+  "tweets_media_pct_pre",
+  "likes_media_pct_pre",
+  "tweets_pol_pct_pre",
+  "likes_pol_pct_pre"
+ ],
+ "describe": {
+  "account_age_days": {
+   "mean": 3434.78,
+   "50%": 3722.0,
+   "min": 0.0,
+   "max": 5453.0
+  },
+  "listed_count": {
+   "mean": 27.29,
+   "50%": 9.0,
+   "min": 0.0,
+   "max": 1031.0
+  },
+  "favourites_count": {
+   "mean": 44998.83,
+   "50%": 21657.5,
+   "min": 0.0,
+   "max": 1127449.0
+  },
+  "statuses_count": {
+   "mean": 49269.59,
+   "50%": 27352.5,
+   "min": 118.0,
+   "max": 801280.0
+  },
+  "friends_count": {
+   "mean": 1103.62,
+   "50%": 810.0,
+   "min": 127.0,
+   "max": 4586.0
+  },
+  "followers_count": {
+   "mean": 1663.51,
+   "50%": 845.5,
+   "min": 79.0,
+   "max": 16383.0
+  },
+  "tweets_media_pct_pre": {
+   "mean": 0.4,
+   "50%": 0.0,
+   "min": 0.0,
+   "max": 50.0
+  },
+  "likes_media_pct_pre": {
+   "mean": 0.83,
+   "50%": 0.0,
+   "min": 0.0,
+   "max": 71.0
+  },
+  "tweets_pol_pct_pre": {
+   "mean": 10.38,
+   "50%": 7.0,
+   "min": 0.0,
+   "max": 86.0
+  },
+  "likes_pol_pct_pre": {
+   "mean": 11.78,
+   "50%": 8.0,
+   "min": 0.0,
+   "max": 100.0
+  }
+ },
+ "results": {
+  "Baseline (luon doan Sport)": {
+   "accuracy": 0.6165,
+   "precision_macro": 0.20550000000000002,
+   "recall_macro": 0.3333333333333333,
+   "f1_macro": 0.2542530157748221,
+   "per_class": {
+    "Sport": {
+     "precision": 0.6165,
+     "recall": 1.0,
+     "f1": 0.7627590473244664
+    },
+    "Entertainment": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "Lifestyle": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "cm": [
+    [
+     1233,
+     0,
+     0
+    ],
+    [
+     608,
+     0,
+     0
+    ],
+    [
+     159,
+     0,
+     0
+    ]
+   ]
+  },
+  "Logistic Regression (thu vien)": {
+   "accuracy": 0.633,
+   "precision_macro": 0.41946778711484595,
+   "recall_macro": 0.35892880010244593,
+   "f1_macro": 0.3131140058538847,
+   "per_class": {
+    "Sport": {
+     "precision": 0.6334033613445378,
+     "recall": 0.9781021897810219,
+     "f1": 0.7688874721071087
+    },
+    "Entertainment": {
+     "precision": 0.625,
+     "recall": 0.09868421052631579,
+     "f1": 0.17045454545454544
+    },
+    "Lifestyle": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "cm": [
+    [
+     1206,
+     27,
+     0
+    ],
+    [
+     548,
+     60,
+     0
+    ],
+    [
+     150,
+     9,
+     0
+    ]
+   ]
+  },
+  "Logistic Regression (cong thuc)": {
+   "accuracy": 0.6325,
+   "precision_macro": 0.4172558069822834,
+   "recall_macro": 0.3586584567664091,
+   "f1_macro": 0.31290255463887684,
+   "per_class": {
+    "Sport": {
+     "precision": 0.6332107199159223,
+     "recall": 0.9772911597729116,
+     "f1": 0.7684948979591837
+    },
+    "Entertainment": {
+     "precision": 0.6185567010309279,
+     "recall": 0.09868421052631579,
+     "f1": 0.1702127659574468
+    },
+    "Lifestyle": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "cm": [
+    [
+     1205,
+     28,
+     0
+    ],
+    [
+     548,
+     60,
+     0
+    ],
+    [
+     150,
+     9,
+     0
+    ]
+   ]
+  },
+  "Decision Tree (thu vien)": {
+   "accuracy": 0.601,
+   "precision_macro": 0.369956725823313,
+   "recall_macro": 0.36207237194464376,
+   "f1_macro": 0.34291039594252176,
+   "per_class": {
+    "Sport": {
+     "precision": 0.6396664681357951,
+     "recall": 0.8710462287104623,
+     "f1": 0.7376373626373627
+    },
+    "Entertainment": {
+     "precision": 0.42474916387959866,
+     "recall": 0.20888157894736842,
+     "f1": 0.28004410143329656
+    },
+    "Lifestyle": {
+     "precision": 0.045454545454545456,
+     "recall": 0.006289308176100629,
+     "f1": 0.011049723756906077
+    }
+   },
+   "cm": [
+    [
+     1074,
+     145,
+     14
+    ],
+    [
+     474,
+     127,
+     7
+    ],
+    [
+     131,
+     27,
+     1
+    ]
+   ]
+  },
+  "Decision Tree ID3 (cong thuc)": {
+   "accuracy": 0.6075,
+   "precision_macro": 0.36039385789783424,
+   "recall_macro": 0.37043039726241805,
+   "f1_macro": 0.35170641846034517,
+   "per_class": {
+    "Sport": {
+     "precision": 0.6460230722525805,
+     "recall": 0.8629359286293593,
+     "f1": 0.7388888888888889
+    },
+    "Entertainment": {
+     "precision": 0.43515850144092216,
+     "recall": 0.24835526315789475,
+     "f1": 0.3162303664921466
+    },
+    "Lifestyle": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "cm": [
+    [
+     1064,
+     167,
+     2
+    ],
+    [
+     453,
+     151,
+     4
+    ],
+    [
+     130,
+     29,
+     0
+    ]
+   ]
+  },
+  "Logistic Regression (can bang lop)": {
+   "accuracy": 0.4755,
+   "precision_macro": 0.43112036672431026,
+   "recall_macro": 0.46194053426501114,
+   "f1_macro": 0.40476797597905706,
+   "per_class": {
+    "Sport": {
+     "precision": 0.7331838565022422,
+     "recall": 0.5304136253041363,
+     "f1": 0.6155294117647059
+    },
+    "Entertainment": {
+     "precision": 0.42829076620825146,
+     "recall": 0.35855263157894735,
+     "f1": 0.39033124440465533
+    },
+    "Lifestyle": {
+     "precision": 0.1318864774624374,
+     "recall": 0.4968553459119497,
+     "f1": 0.20844327176781002
+    }
+   },
+   "cm": [
+    [
+     654,
+     255,
+     324
+    ],
+    [
+     194,
+     218,
+     196
+    ],
+    [
+     44,
+     36,
+     79
+    ]
+   ]
+  },
+  "Decision Tree (can bang lop)": {
+   "accuracy": 0.364,
+   "precision_macro": 0.3920510536536826,
+   "recall_macro": 0.39470641337885404,
+   "f1_macro": 0.32915208480789454,
+   "per_class": {
+    "Sport": {
+     "precision": 0.7080745341614907,
+     "recall": 0.36982968369829683,
+     "f1": 0.48588172615876396
+    },
+    "Entertainment": {
+     "precision": 0.374031007751938,
+     "recall": 0.31743421052631576,
+     "f1": 0.34341637010676157
+    },
+    "Lifestyle": {
+     "precision": 0.09404761904761905,
+     "recall": 0.4968553459119497,
+     "f1": 0.15815815815815815
+    }
+   },
+   "cm": [
+    [
+     456,
+     287,
+     490
+    ],
+    [
+     144,
+     193,
+     271
+    ],
+    [
+     44,
+     36,
+     79
+    ]
+   ]
+  }
+ },
+ "best_depth_dt": 8,
+ "depth_cv_dt": {
+  "2": 0.2852,
+  "3": 0.3117,
+  "4": 0.3261,
+  "5": 0.325,
+  "6": 0.3298,
+  "8": 0.3474
+ },
+ "best_depth_id3": 5,
+ "depth_cv_id3": {
+  "2": 0.2829,
+  "3": 0.2991,
+  "4": 0.3347,
+  "5": 0.3379
+ },
+ "loss_first": 1.0986122886651097,
+ "loss_last": 0.8372200707890749,
+ "root_gain": {
+  "account_age_days": 0.00213,
+  "listed_count": 0.00154,
+  "favourites_count": 0.00516,
+  "statuses_count": 0.0021,
+  "friends_count": 0.00098,
+  "followers_count": 0.00024,
+  "tweets_media_pct_pre": 0.0,
+  "likes_media_pct_pre": 0.00399,
+  "tweets_pol_pct_pre": 0.0091,
+  "likes_pol_pct_pre": 0.01572
+ },
+ "dt_feature_importance": {
+  "account_age_days": 0.1181,
+  "listed_count": 0.1144,
+  "favourites_count": 0.1452,
+  "statuses_count": 0.1386,
+  "friends_count": 0.093,
+  "followers_count": 0.0992,
+  "tweets_media_pct_pre": 0.0,
+  "likes_media_pct_pre": 0.0182,
+  "tweets_pol_pct_pre": 0.0873,
+  "likes_pol_pct_pre": 0.1859
+ }
+}

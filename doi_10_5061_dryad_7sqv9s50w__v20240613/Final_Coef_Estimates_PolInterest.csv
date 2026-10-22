@@ -1,0 +1,41 @@
+Treatment,Variable,coef,se,upper,lower,Model,Function,UserType
+Male,News Followed,0.0735,0.0366,0.145236,0.001764,Intention to Treat (ITT),LM Change,High Interest
+Male,News (Re)Tweets,-0.0216,0.022,0.02152,-0.06472,Intention to Treat (ITT),LM Change,High Interest
+Male,News Likes,0.0306,0.023,0.07568,-0.01448,Intention to Treat (ITT),LM Change,High Interest
+Male,Political Tweets,-0.021,0.022,0.02212,-0.06412,Intention to Treat (ITT),LM Change,High Interest
+Male,Political Likes,-0.0234,0.0229,0.021484,-0.068284,Intention to Treat (ITT),LM Change,High Interest
+Female,News Followed,0.0598,0.0368,0.131928,-0.012328,Intention to Treat (ITT),LM Change,High Interest
+Female,News (Re)Tweets,0.0049,0.022,0.04802,-0.03822,Intention to Treat (ITT),LM Change,High Interest
+Female,News Likes,0.055,0.023,0.10008,0.00992,Intention to Treat (ITT),LM Change,High Interest
+Female,Political Tweets,0.0175,0.0221,0.060816,-0.025816,Intention to Treat (ITT),LM Change,High Interest
+Female,Political Likes,0.0117,0.023,0.05678,-0.03338,Intention to Treat (ITT),LM Change,High Interest
+Male,News Followed,0.0603,0.0402,0.139092,-0.018492,Treated,LM Change,High Interest
+Male,News (Re)Tweets,-0.02665,0.024,0.02039,-0.07369,Treated,LM Change,High Interest
+Male,News Likes,0.018,0.0251,0.067196,-0.031196,Treated,LM Change,High Interest
+Male,Political Tweets,-0.0377,0.0243,0.009928,-0.085328,Treated,LM Change,High Interest
+Male,Political Likes,-0.0122,0.0252,0.037192,-0.061592,Treated,LM Change,High Interest
+Female,News Followed,0.0714,0.0404,0.150584,-0.007784,Treated,LM Change,High Interest
+Female,News (Re)Tweets,-0.00105,0.0239,0.045794,-0.047894,Treated,LM Change,High Interest
+Female,News Likes,0.0552,0.025,0.1042,0.0062,Treated,LM Change,High Interest
+Female,Political Tweets,0.00865,0.0242,0.056082,-0.038782,Treated,LM Change,High Interest
+Female,Political Likes,0.0166,0.0251,0.065796,-0.032596,Treated,LM Change,High Interest
+Male,News Followed,0.0452,0.0453,0.133988,-0.043588,Intention to Treat (ITT),LM Change,Low Interest
+Male,News (Re)Tweets,-0.0362,0.0273,0.017308,-0.089708,Intention to Treat (ITT),LM Change,Low Interest
+Male,News Likes,-0.0323,0.028,0.02258,-0.08718,Intention to Treat (ITT),LM Change,Low Interest
+Male,Political Tweets,0.032,0.0272,0.085312,-0.021312,Intention to Treat (ITT),LM Change,Low Interest
+Male,Political Likes,-0.0295,0.0281,0.025576,-0.084576,Intention to Treat (ITT),LM Change,Low Interest
+Female,News Followed,0.0235,0.0455,0.11268,-0.06568,Intention to Treat (ITT),LM Change,Low Interest
+Female,News (Re)Tweets,-0.0178,0.0273,0.035708,-0.071308,Intention to Treat (ITT),LM Change,Low Interest
+Female,News Likes,0.0211,0.028,0.07598,-0.03378,Intention to Treat (ITT),LM Change,Low Interest
+Female,Political Tweets,0.0701,0.0272,0.123412,0.016788,Intention to Treat (ITT),LM Change,Low Interest
+Female,Political Likes,-0.0154,0.0281,0.039676,-0.070476,Intention to Treat (ITT),LM Change,Low Interest
+Male,News Followed,0.05588,0.0493,0.152508,-0.040748,Treated,LM Change,Low Interest
+Male,News (Re)Tweets,-0.03758,0.0298,0.020828,-0.095988,Treated,LM Change,Low Interest
+Male,News Likes,-0.0285,0.0307,0.031672,-0.088672,Treated,LM Change,Low Interest
+Male,Political Tweets,0.0415,0.0298,0.099908,-0.016908,Treated,LM Change,Low Interest
+Male,Political Likes,-0.03725,0.0305,0.02253,-0.09703,Treated,LM Change,Low Interest
+Female,News Followed,0.04827,0.0492,0.144702,-0.048162,Treated,LM Change,Low Interest
+Female,News (Re)Tweets,-0.04061,0.0295,0.01721,-0.09843,Treated,LM Change,Low Interest
+Female,News Likes,0.0173,0.0304,0.076884,-0.042284,Treated,LM Change,Low Interest
+Female,Political Tweets,0.0382,0.0295,0.09602,-0.01962,Treated,LM Change,Low Interest
+Female,Political Likes,-0.03258,0.0302,0.026612,-0.091772,Treated,LM Change,Low Interest
